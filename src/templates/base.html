@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block head_title %} Zero & Ones {% endblock head_title %}</title>
+    {% include 'snippets/css.html' %}
+      <style>
+body {
+    background: #BBA8A4;
+}
+
+.content {
+    max-width: 600px;
+    margin: auto;
+    background: #9E9897;
+    padding: 50px;
+}
+</style>
+</head>
+  <body>
+
+        <div class="content">
+            {% include 'snippets/nav.html' %}
+            {% block content%}
+            {% endblock content%}
+        </div>
+        {% include 'snippets/js.html' %}
+  </body>
+</html>
